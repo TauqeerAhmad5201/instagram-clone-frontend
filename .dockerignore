@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Editor files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
+.git
+.gitignore
+README.md
