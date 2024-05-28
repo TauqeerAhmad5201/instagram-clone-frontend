@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: insta-clone-frontend-service
+  labels:
+    app: insta-clone-frontend
+spec:
+  type: NodePort
+  ports:
+  - port: 3000
+    targetPort: 3000
+    nodePort: 31000
+  selector:
+    app: insta-clone-frontend

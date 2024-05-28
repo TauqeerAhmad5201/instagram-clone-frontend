@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insta-clone-frontend-deployment
+  labels:
+    app: insta-clone-frontend
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: insta-clone-frontend
+  template:
+    metadata:
+      labels:
+        app: insta-clone-frontend
+    spec:
+      containers:
+      - name: insta-clone-frontend
+        image: tauqeerops/insta-clone-frontend:latest
+        ports:
+        - containerPort: 3000
